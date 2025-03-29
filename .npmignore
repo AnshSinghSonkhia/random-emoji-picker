@@ -1,0 +1,33 @@
+utils/totalEmojiCnt.js
+functions.md
+test/
+.gitignore
+
+# Ignore node_modules
+node_modules/
+
+# Ignore logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore build files
+dist/
+build/
+
+# Ignore test coverage
+coverage/
+
+# Ignore environment files
+.env
+.env.local
+.env.*.local
+
+# Ignore editor settings
+.vscode/
+.idea/
+*.swp
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
