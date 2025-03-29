@@ -1,3 +1,5 @@
+const emojiMap = require("emoji-unicode-map");
+
 const emojiDatabase = {
     happy: [
       "😂", "😆", "😃", "😊", "😁", "😄", "😇", "😜", "🤩", "🥳",
@@ -98,4 +100,22 @@ const emojiDatabase = {
     bike: ["🚴", "🚵", "🛴", "🛹", "🛶", "🚲", "🛵", "🛺", "🚤", "⛵"],
 };
   
-module.exports = emojiDatabase;  
+// module.exports = emojiDatabase;  
+// Function to generate keywords dynamically
+function generateKeywords(emoji) {
+    const name = emojiMap.get(emoji); // Gets emoji name (e.g., "grinning face")
+    if (!name) return [];
+    return name.toLowerCase().split(" "); // Convert to lowercase and split into words
+  }
+  
+  // Convert database to include keywords
+  const formattedDatabase = {};
+  for (const category in emojiDatabase) {
+    formattedDatabase[category] = emojiDatabase[category].map((emoji) => ({
+      symbol: emoji,
+      keywords: generateKeywords(emoji),
+    }));
+  }
+  
+  module.exports = { emojiDatabase, formattedDatabase };
+  console.log("Formatted Database:", JSON.stringify(formattedDatabase, null, 2));

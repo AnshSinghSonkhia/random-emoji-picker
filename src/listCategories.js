@@ -1,4 +1,4 @@
-const emojiDatabase = require("./emojiDatabase");
+const { emojiDatabase } = require("./emojiDatabase");
 
 function listCategories() {
   return Object.keys(emojiDatabase);

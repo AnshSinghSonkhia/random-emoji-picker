@@ -1,10 +1,20 @@
-const emojiDatabase = require("./emojiDatabase");
+const { formattedDatabase } = require("./emojiDatabase");
 
 function searchEmoji(keyword) {
+  if (!keyword || typeof keyword !== "string") return [];
+
   keyword = keyword.toLowerCase();
-  return Object.values(emojiDatabase)
-    .flat()
-    .filter(emoji => emoji.keywords?.some(k => k.includes(keyword)));
+  const matchingEmojis = [];
+
+  for (const category in formattedDatabase) {
+    for (const emoji of formattedDatabase[category]) {
+      if (emoji.keywords.some((word) => word.includes(keyword))) {
+        matchingEmojis.push(emoji.symbol);
+      }
+    }
+  }
+
+  return matchingEmojis;
 }
 
 module.exports = searchEmoji;

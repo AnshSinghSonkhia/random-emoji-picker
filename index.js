@@ -1,8 +1,8 @@
-const getRandomEmoji = require("./getRandomEmoji");
-const getEmojiByCategory = require("./getEmojiByCategory");
-const listCategories = require("./listCategories");
-const getAllEmojisByCategory = require("./getAllEmojisByCategory");
-const searchEmoji = require("./searchEmoji");
+const getRandomEmoji = require("./src/getRandomEmoji");
+const getEmojiByCategory = require("./src/getEmojiByCategory");
+const listCategories = require("./src/listCategories");
+const getAllEmojisByCategory = require("./src/getAllEmojisByCategory");
+const searchEmoji = require("./src/searchEmoji");
 
 module.exports = {
   getRandomEmoji,

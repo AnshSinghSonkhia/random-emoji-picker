@@ -1,4 +1,4 @@
-const emojiDatabase = require("./emojiDatabase");
+const { emojiDatabase } = require("./emojiDatabase");
 
 function getRandomEmoji() {
   const allEmojis = Object.values(emojiDatabase).flat();

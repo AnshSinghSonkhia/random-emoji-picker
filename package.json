@@ -1,0 +1,82 @@
+{
+  "name": "random-emoji-picker",
+  "version": "1.0.0",
+  "description": "Emoji utility package that allows you to fetch random emojis, get emojis by category, list available categories, and search for emojis by keyword. Perfect for adding emoji fun to your JavaScript projects!",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnshSinghSonkhia/random-emoji-picker.git"
+  },
+  "keywords": [
+    "emoji",
+    "emoji-finder",
+    "emoji-search",
+    "emoji-getter",
+    "get-emoji",
+    "random-emoji",
+    "emoji-library",
+    "emoji-tool",
+    "emoji-picker",
+    "fun",
+    "expressive",
+    "emoji-npm",
+    "happy",
+    "sad",
+    "angry",
+    "love",
+    "animals",
+    "food",
+    "car",
+    "nature",
+    "sports",
+    "travel",
+    "tech",
+    "holidays",
+    "fantasy",
+    "space",
+    "money",
+    "science",
+    "crime",
+    "health",
+    "weather",
+    "space",
+    "music",
+    "office",
+    "religion",
+    "education",
+    "entertainment",
+    "fashion",
+    "art",
+    "gaming",
+    "hobbies",
+    "gardening",
+    "cooking",
+    "baking",
+    "photography",
+    "fitness",
+    "yoga",
+    "meditation",
+    "relaxation",
+    "selfCare",
+    "student",
+    "bike"
+  ],
+  "author": "Ansh Singh Sonkhia",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/AnshSinghSonkhia/random-emoji-picker/issues"
+  },
+  "homepage": "https://github.com/AnshSinghSonkhia/random-emoji-picker#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "emoji-unicode-map": "^1.1.12"
+  }
+}

@@ -1,4 +1,4 @@
-const emojiDatabase = require("./emojiDatabase");
+const { emojiDatabase } = require("./emojiDatabase");
 
 function getEmojiByCategory(category) {
   if (!emojiDatabase[category]) return null;
