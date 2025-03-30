@@ -2,7 +2,7 @@
 
 A simple & fast emoji utility package that allows you to fetch random emojis, get emojis by category, list available categories, and search for emojis by keyword. Perfect for adding emoji fun to your JavaScript projects!
 
-**Total number of emojis:** `964`
+**Total number of emojis:** `1024`
 
 [![npm](https://img.shields.io/npm/v/random-emoji-picker.svg)](https://www.npmjs.com/package/random-emoji-picker)  [![License](https://img.shields.io/npm/l/random-emoji-picker.svg)](LICENSE) 
 

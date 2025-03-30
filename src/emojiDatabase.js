@@ -104,7 +104,7 @@ const emojiDatabase = {
     communication: ["📞", "📻", "📡", "📺", "🎙️", "📢", "📨", "✉️", "💬", "🗞️"], 
     medical: ["🚑", "⚕️", "🏥", "💉", "💊", "🩺", "🩹", "🩼", "🆘", "🛑"], 
     casino: ["🎰", "🎲", "🃏", "🎴", "🎭", "🎮", "💰", "🤑", "🔮", "🎡"],
-    circus: ["🎪", "🎭", "🤹‍♂️", "🎠", "🎡", "🎢", "🐘", "🐍", "🎈"]
+    circus: ["🎪", "🎭", "🤹‍♂️", "🎠", "🎡", "🎢", "🐘", "🐍", "🎈"],
 };
   
 // module.exports = emojiDatabase;  
@@ -125,4 +125,15 @@ function generateKeywords(emoji) {
   }
   
   module.exports = { emojiDatabase, formattedDatabase };
-  console.log("Formatted Database:", JSON.stringify(formattedDatabase, null, 2));
+//   console.log("Formatted Database:", JSON.stringify(formattedDatabase, null, 2));
+
+// Function to count all emojis in the database
+function countAllEmojis(database) {
+    let totalCount = 0;
+    for (const category in database) {
+        totalCount += database[category].length;
+    }
+    return totalCount;
+}
+
+console.log("Total Emojis:", countAllEmojis(emojiDatabase));
