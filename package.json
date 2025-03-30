@@ -1,6 +1,6 @@
 {
   "name": "random-emoji-picker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Emoji utility package that allows you to fetch random emojis, get emojis by category, list available categories, and search for emojis by keyword. Perfect for adding emoji fun to your JavaScript projects!",
   "main": "index.js",
   "directories": {
